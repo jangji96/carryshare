@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shareInfoSelectScreen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rent_text"
+            android:adjustViewBounds="true">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:onClick="showSelectSuitcase"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="＜"
+                android:textColor="#ffffff"
+                android:background="#a7a7a7"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="공유 정보 확인                "
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:background="#a7a7a7"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:id="@+id/container">
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지도"
+            android:textSize="20dp"
+            android:onClick="select"
+            android:id="@+id/btnMap"
+            android:background="#a7a7a7"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="리스트"
+            android:textSize="20dp"
+            android:onClick="select"
+            android:background="#a7a7a7"
+            android:textColor="#ffffff"
+            android:id="@+id/btnList"/>
+    </LinearLayout>
+
+
+</LinearLayout>
